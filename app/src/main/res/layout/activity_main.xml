@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".com.unirfp.movieapp.com.unirfp.movieapp.MainActivity">
+
+    <EditText
+        android:id="@+id/etSalarioBruto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/liena_viewtext"
+        android:backgroundTint="@color/texto_hint"
+        android:hint="@string/salario_bruto_anual"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/texto"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spNumeroPagas"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/backgroundtag"
+        android:backgroundTint="@color/texto_hint"
+        android:inputType="number"
+        android:popupBackground="@color/texto_hint"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSalarioBruto" />
+
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/liena_viewtext"
+        android:backgroundTint="@color/texto_hint"
+        android:hint="@string/edad"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/texto"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumeroHijos" />
+
+    <Spinner
+        android:id="@+id/spGrupoProfesional"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/backgroundtag"
+        android:backgroundTint="@color/texto_hint"
+        android:popupBackground="@color/texto_hint"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEdad" />
+
+    <Spinner
+        android:id="@+id/spGradoDiscapacidad"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/backgroundtag"
+        android:backgroundTint="@color/texto_hint"
+        android:popupBackground="@color/texto_hint"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spGrupoProfesional" />
+
+    <Spinner
+        android:id="@+id/spEstadoCivil"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/backgroundtag"
+        android:backgroundTint="@color/texto_hint"
+        android:popupBackground="@color/texto_hint"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spGradoDiscapacidad" />
+
+    <EditText
+        android:id="@+id/etNumeroHijos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/liena_viewtext"
+        android:backgroundTint="@color/texto_hint"
+        android:hint="@string/n_mero_de_hijos"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/texto"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spNumeroPagas" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/calcular_salario_neto"
+        android:textColor="@color/texto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spEstadoCivil"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
